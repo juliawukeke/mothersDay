@@ -148,15 +148,9 @@
     transform: scale(1.5);
 }
 
-
-
-
-
-
 .l-products img {
     width: 100%;
 }
-
 
 .l-chance {
     position: relative;
@@ -199,7 +193,7 @@
     z-index: 1;
     right: 0;
     width: 110px;
-    top: -9%;
+    top: -5%;
 }
 
 .l-coverItem__action {
