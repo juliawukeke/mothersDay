@@ -1,0 +1,256 @@
+@keyframes rotateBg {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.l-main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/index/bg_background.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.l-main__content {
+    height: calc(100% - 220px);
+}
+
+
+.l-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.l-content__logo {
+    max-height: 20%;
+    flex: 0 1 20%;
+    align-self: flex-start;
+}
+
+.l-logo {
+    padding-top: 10%;
+    padding-left: 10%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.l-logo img {
+    height: 100%;
+    width: auto;
+}
+
+
+
+.l-content__title {
+    max-height: 30%;
+    flex: 0 1 30%;
+}
+
+.l-shake {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5% 5% 2% 5%;
+}
+
+.l-shake__hand {
+    flex-shrink: 1;
+    position: relative;
+}
+
+.l-shake__hand img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.l-shake__title {
+    flex-shrink: 1;
+}
+
+.l-shake__title img {
+    width: 100%;
+    margin-left: -15px;
+}
+
+.c-shakeVibeLeft {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+
+.c-shakeVibeRight {
+    position: absolute;
+    right: -10%;
+    bottom: 8%;
+}
+
+
+
+.l-content__flower {
+    max-height: 50%;
+    flex: 1 1 50%;
+    width: 90%;
+}
+
+.l-flowers {
+    height: 100%;
+}
+
+.l-flowers img {
+    width: 100%;
+    height: 100%;
+}
+
+.l-main__cover {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+}
+
+.l-main__shine {
+    position: absolute;
+    top: 50%;
+    margin-top: -600px;
+    left: 50%;
+    margin-left: -600px;
+    /* animation-name: rotateBg; */
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    transform-origin: 50%;
+    animation-timing-function: linear;
+}
+
+.l-main__final {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+#js-changePic {
+    transform: scale(1);
+    transition: all 1s;
+}
+
+#js-changePic.is-larger {
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+.l-products img {
+    width: 100%;
+}
+
+
+.l-chance {
+    position: relative;
+}
+
+.l-chance__wording {
+    font-size: 26px;
+    font-weight: bold;
+    color: #FF99CC;
+    position: absolute;
+    left: 49px;
+    top: 25px;
+    transform: rotate(7deg);
+}
+
+.l-chance img {
+    width: 100%;
+}
+
+/* 首頁遮罩 */
+.l-coverItem {
+    position: relative;
+    background-image: url(../image/index/bg_cover.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    padding-top: 75px;
+}
+
+.l-coverItem__products {
+    position: absolute;
+    z-index: -2;
+    top: -10%;
+    left: 20px;
+    width: 80px;
+}
+
+.l-coverItem__chance {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 110px;
+    top: -9%;
+}
+
+.l-coverItem__action {
+    display: flex;
+    justify-content: center;
+}
+
+/* 遮罩_禮物 */
+.l-gifts {
+    margin-top: -10px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.l-gifts img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* 獎品頁面 */
+.l-finalGroup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-marginTop30 {
+    margin-top: 30px;
+}
+
+.is-marginTop20 {
+    margin-top: 20px;
+}
+
+.is-marginTopMinus30 {
+    margin-top: -30px;
+}
+
+.is-marginTopMinus20 {
+    margin-top: -20px;
+}
+
+.l-finalGroup img {
+    max-width: 100%;
+}
+
+.is-giftText {
+    padding-left: 10px;
+}
